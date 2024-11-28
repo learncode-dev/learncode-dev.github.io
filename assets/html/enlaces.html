@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>LearnCode > HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML - Enlaces y navegación</h1>
+    </header>
+
+    <main>
+        <section id="enlaces">
+            <h2>Enlaces y atributo "href"</h2>
+            <p>
+                Los enlaces son una parte fundamental de la navegación en la web. Se crean utilizando la etiqueta <code>&lt;a&gt;</code>, que se utiliza para definir un hipervínculo. El atributo <code>href</code> se utiliza dentro de la etiqueta <code>&lt;a&gt;</code> para especificar la URL del destino del enlace. Cuando un usuario hace clic en el enlace, el navegador lo lleva a la URL indicada.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="https://www.learncode.es"&gt;</span>Visita nuestra página web<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="https://www.google.com"&gt;</span>Ir a Google<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="https://www.facebook.com"&gt;</span>Visitar Facebook<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <a href="https://www.learncode.es">Visita nuestra página web</a>
+                    <br><br>
+                    <a href="https://www.google.com">Ir a Google</a>
+                    <br><br>
+                    <a href="https://www.facebook.com">Visitar Facebook</a>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="enlaces-internos-externos">
+            <h2>Enlaces internos y externos</h2>
+            <ul>
+                <li><b>Enlaces internos</b>: Estos son enlaces que apuntan a otras partes dentro de la misma página o sitio web. Se usan comúnmente con anclajes o identificadores en la página. Para hacer un enlace interno, simplemente coloca el símbolo <code>#</code> seguido del id del elemento de destino.</li>
+                <li><b>Enlaces externos</b>: Son enlaces que llevan a otra página fuera de tu sitio web. Esto se especifica con una URL completa que contiene <code>http://</code> o <code>https://</code>.</li>
+            </ul><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="#enlaces-anclaje"&gt;</span>Ir a la seccion de enlaces con anclaje<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="https://www.learncode.com"&gt;</span>Visitar Ejemplo Externo<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="../../index.html"&gt;</span>Volver al inicio<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <a href="#enlaces-anclaje">Ir a la seccion de enlaces con anclaje</a>
+                    <br><br>
+                    <a href="https://www.learncode.es">Visitar Ejemplo Externo</a>
+                    <br><br>
+                    <a href="../../index.html">Volver al inicio</a>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="enlaces-correo">
+            <h2>Enlaces de correo electrónico y teléfonos</h2>
+            <ul>
+                <li>El atributo <code>mailto:</code> en un enlace permite a los usuarios enviar un correo electrónico directamente desde la web. El valor del atributo <code>href</code> comienza con <code>mailto:</code> seguido de la dirección de correo electrónico del destinatario. Esto abre automáticamente el cliente de correo del usuario con la dirección pre-rellenada.</li>
+                <li>El atributo <code>tel:</code> en un enlace permite a los usuarios realizar una llamada telefónica directamente desde la web. El valor del atributo <code>href</code> comienza con <code>tel:</code> seguido del número de teléfono al que se desea llamar. Al hacer clic en el enlace, se abrirá la aplicación de teléfono del usuario para realizar la llamada.</li>
+            </ul><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="mailto:info@ejemplo.com"&gt;</span>Enviar un correo<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="tel:+34678234736"&gt;</span>Llamar<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <a href="mailto:info@ejemplo.com">Enviar un correo</a>
+                    <br><br>
+                    <a href="tel:+34678234736">Llamar</a>
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="enlaces-anclaje">
+            <h2>Enlaces con anclaje (<code>#</code>)</h2>
+            <p>
+                Los anclajes son un tipo especial de enlace interno que permiten navegar hacia una parte específica de la misma página. Se utiliza el atributo <code>href</code> con el símbolo <code>#</code> seguido de un id que debe coincidir con el de un elemento en la página. Es útil para crear menús de navegación o saltar directamente a secciones específicas de contenido largo.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="#seccion1"&gt;</span>Ir a la Sección 1<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="#servicios"&gt;</span>Ver nuestros servicios<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a href="#contacto"&gt;</span>Contacta con nosotros<span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <a href="#seccion1">Ir a la Sección 1</a>
+                    <br><br>
+                    <a href="#servicios">Ver nuestros servicios</a>
+                    <br><br>
+                    <a href="#contacto">Contacta con nosotros</a>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+    
+        <div class="row">
+            <div class="col2 left">
+                <a href="texto-estructura-basica.html">⟪ Texto y estructura básica</a>
+            </div>
+            <div class="col2 right">
+                <a href="multimedia.html">Imágenes y multimedia ⟫</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">HTML</a>
+                <a href="../css/index.html">CSS</a>
+                <a href="../javascript/index.html">JavaScript</a>
+                <a href="../sql/index.html">SQL</a>
+                <a href="../php/index.html">PHP</a>
+                <a href="../python/index.html">Python</a>
+                <a href="../nodejs/index.html">Node.js</a>
+                <a href="../react/index.html">React</a>
+                <a href="../angular/index.html">Angular</a>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <br><br>
+        <p>&copy; 2024 - LearnCode. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>

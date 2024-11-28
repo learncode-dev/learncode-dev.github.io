@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>LearnCode > HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML - Introducción</h1>
+    </header>
+
+    <main>
+        <section id="introduccion">
+            <h2>¿Qué es HTML?</h2>
+            <p>
+              HTML (HyperText Markup Language) es el lenguaje estándar para estructurar contenido en la web.
+              Se basa en el uso de etiquetas para definir diferentes elementos como texto, imágenes y enlaces.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;!DOCTYPE html&gt;</span><br>
+                            <span class="color1">&lt;html&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;head&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color2">&lt;title&gt;</span>
+                            Mi Página Web
+                            <span class="color2">&lt;/title&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;/head&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;body&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color2">&lt;h1&gt;</span>
+                            ¡Hola Mundo!
+                            <span class="color2">&lt;/h1&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color2">&lt;p&gt;</span>
+                            Esta es mi primera página.
+                            <span class="color2">&lt;/p&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;/body&gt;</span><br>
+                            <span class="color1">&lt;/html&gt;</span>
+                        </code>
+                    </div>                    
+                </div>
+                <div class="col2 muestra">
+                    <h1> ¡Hola Mundo! </h1>
+                    <p> Esta es mi primera página. </p>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="estructura-basica">
+            <h2>Estructura básica de un documento HTML</h2>
+            <p>
+              Un documento HTML siempre comienza con <code>&lt;!DOCTYPE html&gt;</code> seguido de las etiquetas <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, y <code>&lt;body&gt;</code>.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;!DOCTYPE html&gt;</span><br>
+                            <span class="color1">&lt;html&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;head&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color1">&lt;meta</span> <span class="color2">charset</span>=<span class="color3">"UTF-8"</span><span class="color1">&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color1">&lt;title&gt;</span>Página Ejemplo<span class="color1">&lt;/title&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;/head&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;body&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color1">&lt;h1&gt;</span>Bienvenido<span class="color1">&lt;/h1&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="color1">&lt;p&gt;</span>Aquí va el contenido principal.<span class="color1">&lt;/p&gt;</span><br>
+                            &nbsp;&nbsp;<span class="color1">&lt;/body&gt;</span><br>
+                            <span class="color1">&lt;/html&gt;</span>
+                        </code>
+                    </div>                    
+                </div>
+                <div class="col2 muestra">
+                    <h1>Bienvenido</h1>
+                    <p>Aquí va el contenido principal.</p>                    
+                </div>
+            </div>
+        </section>
+        
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="etiquetas">
+            <h2>Etiquetas HTML: ¿Qué son y cómo se usan?</h2>
+            <p>
+              Las etiquetas son los bloques fundamentales en HTML. Cada etiqueta comienza con un nombre rodeado por <code>&lt;</code> y <code>&gt;</code>.
+              Ejemplo: <code>&lt;p&gt;</code> para párrafos o <code>&lt;h1&gt;</code> para encabezados.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;h1&gt;</span>
+                            Este es un encabezado principal.
+                            <span class="color1">&lt;/h1&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a</span>
+                            <span class="color2">href</span>=<span class="color3">"https://learncode.es/"</span>
+                            <span class="color1">&gt;</span>
+                            Haz clic aquí
+                            <span class="color1">&lt;/a&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;img</span>
+                            <span class="color2">src</span>=<span class="color3">"imagen.jpg"</span>
+                            <span class="color2">alt</span>=<span class="color3">"Descripción"</span>
+                            <span class="color1">/&gt;</span>
+                        </code>
+                    </div>                    
+                </div>
+                <div class="col2 muestra">
+                    <h1> Este es un encabezado principal. </h1>
+                    <br><br>
+                    <a href="https://learncode.es/" > Haz clic aquí </a>
+                    <br><br>
+                    <img src="../../img/imagen.jpg" alt="Descripción" />                    
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="atributos">
+            <h2>Atributos HTML</h2>
+            <p>
+              Los atributos añaden propiedades a las etiquetas HTML, como definir enlaces con <code>href</code> o imágenes con <code>src</code>.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;img</span>
+                            <span class="color2">src</span>=<span class="color3">"photo.png"</span>
+                            <span class="color2">alt</span>=<span class="color3">"Descripción breve"</span>
+                            <span class="color1">/&gt;</span>
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;a</span>
+                            <span class="color2">href</span>=<span class="color3">"https://google.com"</span>
+                            <span class="color2">target</span>=<span class="color3">"_blank"</span>
+                            <span class="color1">&gt;</span>
+                            Ir a Google
+                            <span class="color1">&lt;/a&gt;
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            <span class="color1">&lt;p</span>
+                            <span class="color2">title</span>=<span class="color3">"Información adicional"</span>
+                            <span class="color1">&gt;</span>
+                            Este párrafo tiene un atributo "title".
+                            <span class="color1">&lt;/p&gt;</span>
+                        </code>
+                    </div>                    
+                </div>
+                <div class="col2 muestra">
+                    <img src="../../img/photo.jpg" alt="Descripción breve" />
+                    <br><br>
+                    <a href="https://google.com" target="_blank" > Ir a Google </a>
+                    <br><br>
+                    <p title="Información adicional" > Este párrafo tiene un atributo "title". </p>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+    
+        <div class="row">
+            <div class="col2 left">
+                <a href="index.html">⟪ Inicio</a>
+            </div>
+            <div class="col2 right">
+                <a href="texto-estructura-basica.html">Texto y estructura básica ⟫</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">HTML</a>
+                <a href="../css/index.html">CSS</a>
+                <a href="../javascript/index.html">JavaScript</a>
+                <a href="../sql/index.html">SQL</a>
+                <a href="../php/index.html">PHP</a>
+                <a href="../python/index.html">Python</a>
+                <a href="../nodejs/index.html">Node.js</a>
+                <a href="../react/index.html">React</a>
+                <a href="../angular/index.html">Angular</a>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <br><br>
+        <p>&copy; 2024 - LearnCode. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>

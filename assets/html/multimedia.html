@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>LearnCode > HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML - Imágenes y multimedia</h1>
+    </header>
+
+    <main>
+        <section id="imagenes">
+            <h2>Insertar imágenes</h2>
+            <p>
+                La etiqueta <code>&lt;img&gt;</code> se utiliza para insertar imágenes en una página web. A diferencia de otras etiquetas, <code>&lt;img&gt;</code> es una etiqueta auto-cerrada, es decir, no requiere una etiqueta de cierre. La imagen se especifica a través del atributo <code>src</code>, que indica la ubicación de la imagen, y el atributo <code>alt</code>, que proporciona una descripción de la imagen para usuarios con discapacidades visuales o si la imagen no se carga.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">img</span> src="imagen.jpg" alt="Descripción de la imagen"&gt;
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">img</span> src="https://th.bing.com/th/id/OIP.DYR1_oXH6CXQYaUnxrqkYAHaE7?rs=1&pid=ImgDetMain" alt="Foto de un tucan" width="300"&gt;
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">img</span> src="https://fotografias.antena3.com/clipping/cmsimages01/2022/09/21/1057DEF1-A109-4ADA-9EB6-0FE1FAB6FD53/oso-polar-sus-crias_69.jpg?crop=1254,705,x0,y0&width=1280&height=720&optimize=low&format=jpg" alt="Foto de unos osos polares" height="200"&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <img src="../../img/imagen.jpg" alt="Descripción de la imagen">
+                    <br><br>
+                    <img src="https://th.bing.com/th/id/OIP.DYR1_oXH6CXQYaUnxrqkYAHaE7?rs=1&pid=ImgDetMain" alt="Foto de un tucan" width="300">
+                    <br><br>
+                    <img src="https://fotografias.antena3.com/clipping/cmsimages01/2022/09/21/1057DEF1-A109-4ADA-9EB6-0FE1FAB6FD53/oso-polar-sus-crias_69.jpg?crop=1254,705,x0,y0&width=1280&height=720&optimize=low&format=jpg" alt="Foto de unos osos polares" height="200">
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="imagenes-atributos">
+            <h2>Atributos de las imágenes</h2>
+            <p>
+                Además de <code>src</code> y <code>alt</code>, las imágenes también pueden tener los atributos <code>width</code> y <code>height</code>, que permiten ajustar el tamaño de la imagen. Estos atributos son especialmente útiles si deseas cambiar el tamaño de una imagen sin modificar su archivo original. Es importante mantener la proporción entre el ancho y el alto para evitar que la imagen se distorsione.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">img</span> src="imagen.jpg" alt="Descripción de la imagen" width="500" height="300"&gt;
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">img</span> src="https://c.pxhere.com/photos/c6/0b/rhinoceros_wild_wild_animal_zoo_nature_animals_animal_wild_animals-1323027.jpg!d" alt="Foto de un rinoceronte" width="800"&gt;
+                        </code>
+                    </div>
+                    <br><br>
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">img</span> src="https://ideas.ted.com/wp-content/uploads/sites/3/2020/05/final_animals-homeschooling_credit-alamy.jpg" alt="Imagen elefantes" height="400"&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <img src="../../img/imagen.jpg" alt="Descripción de la imagen" width="500" height="300">
+                    <br><br>
+                    <img src="https://c.pxhere.com/photos/c6/0b/rhinoceros_wild_wild_animal_zoo_nature_animals_animal_wild_animals-1323027.jpg!d" alt="Foto de un rinoceronte" width="800">
+                    <br><br>
+                    <img src="https://ideas.ted.com/wp-content/uploads/sites/3/2020/05/final_animals-homeschooling_credit-alamy.jpg" alt="Imagen elefantes" height="400">
+                </div>
+            </div>
+        </section>
+        
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="galerias">
+            <h2>Galerías básicas de imágenes</h2>
+            <p>
+                Puedes crear una galería básica de imágenes en HTML utilizando varias etiquetas <code>&lt;img&gt;</code> dentro de un contenedor <code>&lt;div&gt;</code>. Esto permite mostrar múltiples imágenes de manera organizada en una página web. Usualmente se acompañan de estilos CSS para agregar márgenes, bordes o crear un diseño de cuadrícula.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">div</span> class="galeria"&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">img</span> src="imagen1.jpg" alt="Imagen 1" width="250px"&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">img</span> src="imagen2.jpg" alt="Imagen 2" width="250px"&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">img</span> src="imagen3.jpg" alt="Imagen 3" width="250px"&gt;<br>
+                            &lt;/<span class="color1">div</span>&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <div class="galeria">
+                        <img src="../../img/imagen1.jpg" alt="Imagen 1" width="250px">
+                        <img src="../../img/imagen2.jpg" alt="Imagen 2" width="250px">
+                        <img src="../../img/imagen3.jpg" alt="Imagen 3" width="250px">
+                      </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+    
+        <div class="row">
+            <div class="col2 left">
+                <a href="enlaces.html">⟪ Enlaces y navegación</a>
+            </div>
+            <div class="col2 right">
+                <a href="tablas.html">Tablas y datos ⟫</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">HTML</a>
+                <a href="../css/index.html">CSS</a>
+                <a href="../javascript/index.html">JavaScript</a>
+                <a href="../sql/index.html">SQL</a>
+                <a href="../php/index.html">PHP</a>
+                <a href="../python/index.html">Python</a>
+                <a href="../nodejs/index.html">Node.js</a>
+                <a href="../react/index.html">React</a>
+                <a href="../angular/index.html">Angular</a>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <br><br>
+        <p>&copy; 2024 - LearnCode. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>

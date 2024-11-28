@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <title>LearnCode > HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>HTML - Tablas y datos</h1>
+    </header>
+
+    <main>
+        <section id="tablas">
+            <h2>Creación de tablas</h2>
+            <p>
+                Las tablas en HTML se crean utilizando la etiqueta <code>&lt;table&gt;</code>. Para definir las filas de la tabla, se utiliza la etiqueta <code>&lt;tr&gt;</code>, y cada celda dentro de una fila se define con la etiqueta <code>&lt;td&gt;</code>. Las tablas son útiles para mostrar datos organizados en filas y columnas, como una hoja de cálculo.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">table</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;Celda 1&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;Celda 2&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &lt;/<span class="color1">table</span>&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <table>
+                        <tr>
+                          <td>Celda 1</td>
+                          <td>Celda 2</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="encabezados-tablas">
+            <h2>Encabezados de tablas</h2>
+            <p>
+                La etiqueta <code>&lt;th&gt;</code> se utiliza para definir las celdas de encabezado en una tabla. Estas celdas se muestran en negrita y centradas por defecto. Son útiles para identificar qué contiene cada columna o fila de la tabla.
+            </p><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">table</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">th</span>&gt;Nombre&lt;/<span class="color1">th</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">th</span>&gt;Edad&lt;/<span class="color1">th</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;Juan&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;25&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &lt;/<span class="color1">table</span>&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <table>
+                        <tr>
+                          <th>Nombre</th>
+                          <th>Edad</th>
+                        </tr>
+                        <tr>
+                          <td>Juan</td>
+                          <td>25</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="atributos-tablas">
+            <h2>Atributos de tablas</h2>
+            <p>
+                Los atributos <code>border</code>, <code>cellspacing</code> y <code>cellpadding</code> se usan para darle formato a las tablas.
+            </p>
+            <ul>
+                <li><code>border</code> agrega un borde alrededor de la tabla y sus celdas.</li>
+                <li><code>cellspacing</code> define el espacio entre las celdas.</li>
+                <li><code>cellpadding</code> ajusta el espacio entre el contenido de las celdas y sus bordes.</li>
+            </ul><br>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">table</span> <span class="color2">border="2"</span> <span class="color2">cellspacing="5"</span> <span class="color2">cellpadding="10"</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">th</span>&gt;Nombre&lt;/<span class="color1">th</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">th</span>&gt;Edad&lt;/<span class="color1">th</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;Juan&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;25&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &lt;/<span class="color1">table</span>&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <table border="2" cellspacing="5" cellpadding="10">
+                        <tr>
+                          <th>Nombre</th>
+                          <th>Edad</th>
+                        </tr>
+                        <tr>
+                          <td>Juan</td>
+                          <td>25</td>
+                        </tr>
+                      </table>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="thead-tbody-tfoot">
+            <h2><code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> y <code>&lt;tfoot&gt;</code></h2>
+            <p>
+                En una tabla HTML, las etiquetas <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code> y <code>&lt;tfoot&gt;</code> se utilizan para estructurar de manera semántica las diferentes partes de la tabla.
+            </p><br>
+            <ul>
+                <li><code>&lt;thead&gt;</code>: Define el encabezado de la tabla, normalmente contiene las filas de encabezado (<code>&lt;th&gt;</code>).</li>
+                <li><code>&lt;tbody&gt;</code>: Contiene el cuerpo principal de la tabla, donde se encuentran las filas con los datos de la tabla.</li>
+                <li><code>&lt;tfoot&gt;</code>: Define el pie de la tabla, donde puedes colocar totales o resúmenes relacionados con los datos mostrados en la tabla.</li>
+            </ul>
+            <p>
+                Estas etiquetas no son obligatorias, pero ayudan a mejorar la accesibilidad y la organización del código, además de permitir que los navegadores las utilicen de manera eficiente para la renderización.
+            </p>
+            <div class="row">
+                <div class="col2">
+                    <div class="ejemplo">
+                        <code>
+                            &lt;<span class="color1">table</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">thead</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">th</span>&gt;Nombre&lt;/<span class="color1">th</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">th</span>&gt;Edad&lt;/<span class="color1">th</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">thead</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">tbody</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;Juan&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;25&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">tbody</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;<span class="color1">tfoot</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;Total&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="color1">td</span>&gt;1&lt;/<span class="color1">td</span>&gt;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="color1">tr</span>&gt;<br>
+                            &nbsp;&nbsp;&lt;/<span class="color1">tfoot</span>&gt;<br>
+                            &lt;/<span class="color1">table</span>&gt;
+                        </code>
+                    </div>
+                </div>
+                <div class="col2 muestra">
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Juan</td>
+                            <td>25</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td>Total</td>
+                            <td>1</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+    
+        <div class="row">
+            <div class="col2 left">
+                <a href="multimedia.html">⟪ Imágenes y multimedia</a>
+            </div>
+            <div class="col2 right">
+                <a href="formato-texto.html">Formateo de texto ⟫</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">HTML</a>
+                <a href="../css/index.html">CSS</a>
+                <a href="../javascript/index.html">JavaScript</a>
+                <a href="../sql/index.html">SQL</a>
+                <a href="../php/index.html">PHP</a>
+                <a href="../python/index.html">Python</a>
+                <a href="../nodejs/index.html">Node.js</a>
+                <a href="../react/index.html">React</a>
+                <a href="../angular/index.html">Angular</a>
+            </div>
+
+            <div class="social-media">
+                <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <br><br>
+        <p>&copy; 2024 - LearnCode. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>
