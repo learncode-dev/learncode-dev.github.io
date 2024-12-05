@@ -75,6 +75,27 @@ main {
     background-color: var(--color-fondo);
 }
 
+.legal {
+    padding: 20px;
+    text-align: justify;
+}
+
+.legal h1, .legal h2, .legal h3, .legal h4, .legal h5, .legal h6 {
+    text-align: left;
+}
+
+.legal li {
+    margin: 10px 30px;
+}
+
+.legal a {
+    color: #513eff;
+}
+
+.legal a:hover {
+    color: #3a2fa1;
+}
+
 section:not(#contacto) {
     padding: 20px 0;
 }
@@ -85,6 +106,22 @@ hr {
     border: none;
     height: 2px;
     background-color: var(--color-primario);
+}
+
+/* Inicio / Sobre mi */
+#inicio img {
+    max-width: 65%;
+    border-radius: 50%;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.5s ease;
+}
+
+#inicio img:hover {
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+#inicio p {
+    line-height: 1.5;
 }
 
 /* Skills */
@@ -152,7 +189,7 @@ hr {
 .menta {background-color: #B4F8C8}
 .celeste {background-color: #AEE4FF}
 .melocoton {background-color: #FFDAB9}
-.lavanda2 {background-color: #E1B7D1}
+.granate {background-color: #ffb7b7}
 .vainilla {background-color: #FFF4B2}
 
 /* Headings */
@@ -180,23 +217,6 @@ h6 {font-size: 1rem}
 p {
     font-size: 1rem;
     color: var(--color-texto);
-}
-
-/* Buttons */
-button, .btn {
-    background-color: var(--color-secundario);
-    color: var(--color-texto);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-button:hover, .btn:hover {
-    background-color: var(--color-acento);
-    transform: scale(1.05);
 }
 
 /* Links */
@@ -274,16 +294,25 @@ form {
     width: 90%;
     margin: 10px;
     padding: 20px;
-    background: #ffffff;
+    background: var(--color-primario);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, textarea {
+form a {
+    color: var(--color-texto);
+}
+
+input[type=checkbox]:checked {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+}
+
+input:not(input[type=checkbox]), textarea {
     width: 90%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 2px solid var(--color-fondo);
     border-radius: 5px;
     font-size: 1rem;
     transition: .5s ease;
@@ -291,12 +320,12 @@ input, textarea {
 
 input:hover, textarea:hover {
     outline: none;
-    border: 1px solid #007BFF;
+    border: 2px solid var(--color-hover);
 }
 
 input:focus, textarea:focus {
     outline: none;
-    border: 2px solid #007BFF;
+    border: 2px solid var(--color-hover);
 }
 
 button {
@@ -308,16 +337,26 @@ button {
     font-size: 1rem;
 }
 
-.enviar {background-color: #007BFF;transition: .5s ease}
-.borrar {background-color: #dd4848;transition: .5s ease}
-.enviar:hover {background-color: #0056b3}
-.borrar:hover {background-color: #a53030}
+.enviar {background-color: #7cbcff;transition: .5s ease}
+.borrar {background-color: #ff8f8f;transition: .5s ease}
+.enviar:hover {background-color: #4f81b7}
+.borrar:hover {background-color: #f76262}
 
 
 label {
     text-align: left;
     font-size: 1.1rem;
     color: #333;
+}
+
+.obligatorio {
+    font-weight: bold;
+    color: red;
+}
+
+.opcional {
+    font-style: italic;
+    color: gray;
 }
 
 .mapa {
@@ -346,14 +385,25 @@ footer i:hover {
     transform: scale(1.2);
 }
 
-.social-icons ul {
+footer ul {
     list-style-type: none;
     margin: 20px 0;
 }
 
-.social-icons li {
+footer li {
     display: inline;
     padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+footer a:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
 }
 
 .copyright {

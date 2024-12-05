@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>LearnCode</title>
+    <title>Vanessa Segovia</title>
 </head>
 <body>
     <header>
@@ -26,7 +26,7 @@
             <h2>Sobre mi</h2>
             <div class="row">
                 <div class="col2">
-                    <!-- Imagen aqui-->
+                    <img src="./img/vanessaSegovia.jpg">
                 </div>
                 <div class="col2">
                     <p>Desde pequeña, siempre he sentido una gran atracción por la informática, especialmente por la programación y la ciberseguridad. Esta pasión me llevó a formarme en <strong>Sistemas Microinformáticos y Redes</strong> y posteriormente en <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong>, donde descubrí mi gusto por el diseño y la gestión de proyectos tecnológicos.</p>
@@ -42,19 +42,19 @@
             <h2>Skills</h2>
             <div class="row">
                 <div class="col4">
-                    <div class="cuadrado lavanda">
+                    <div class="cuadrado melocoton">
                         <i class="fa-brands fa-html5"></i><br>
                         <p>HTML</p>
                     </div>
                 </div>
                 <div class="col4">
-                    <div class="cuadrado rosa">
+                    <div class="cuadrado menta">
                         <i class="fa-brands fa-css3-alt"></i><br>
                         <p>CSS</p>
                     </div>
                 </div>
                 <div class="col4">
-                    <div class="cuadrado menta">
+                    <div class="cuadrado vainilla">
                         <i class="fa-brands fa-js"></i><br>
                         <p>JavaScript</p>
                     </div>
@@ -69,19 +69,19 @@
             <br>
             <div class="row">
                 <div class="col3">
-                    <div class="cuadrado melocoton">
+                    <div class="cuadrado lavanda">
                         <i class="fa-solid fa-up-right-and-down-left-from-center"></i><br>
                         <p>Responsive</p>
                     </div>
                 </div>
                 <div class="col3">
-                    <div class="cuadrado lavanda2">
+                    <div class="cuadrado rosa">
                         <i class="fa-solid fa-mobile-screen-button"></i><br>
                         <p>Media Queries</p>
                     </div>
                 </div>
                 <div class="col3">
-                    <div class="cuadrado vainilla">
+                    <div class="cuadrado granate">
                         <i class="fa-solid fa-table-columns"></i><br>
                         <p>Grid</p>
                     </div>
@@ -121,22 +121,27 @@
             <h2>Contacto</h2>
             <div class="row">
                 <div class="col2">
-                    <form action="/enviar.php" method="post">
-                        <label for="nombre">Nombre y Apellidos:</label>
+                    <form action="./php/enviar.php" method="post">
+                        <label for="nombre">Nombre y Apellidos <span class="obligatorio">*</span>:</label>
                         <br>
-                        <input type="text" id="nombre" name="nombre">
+                        <input type="text" id="nombre" name="nombre" required>
                         <br>
-                        <label for="email">Correo:</label>
+                        <label for="tel">Teléfono <span class="opcional">(opcional)</span>:</label>
                         <br>
-                        <input type="email" id="email" name="email">
+                        <input type="tel" id="tel" name="tel">
                         <br>
-                        <label for="mensaje">Mensaje:</label>
+                        <label for="email">Correo <span class="obligatorio">*</span>:</label>
                         <br>
-                        <textarea id="mensaje" name="mensaje"></textarea>
+                        <input type="email" id="email" name="email" required>
                         <br>
-                        <!-- <input type="checkbox" id="accept" name="accept" required>
-                        <label for="accept">Acepto los términos y condiciones</label>
-                        <br> -->
+                        <label for="mensaje">Mensaje <span class="obligatorio">*</span>:</label>
+                        <br>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                        <br>
+                        <label>
+                            <input type="checkbox" required> Acepto los <a href="politica-privacidad.html" target="_blank">términos y condiciones</a> y la <a href="politica-cookies.html" target="_blank">política de privacidad</a>.
+                        </label>
+                        <br><br>
                         <button type="submit" class="enviar">Enviar</button>
                         <button type="reset" class="borrar">Borrar</button>
                     </form>
@@ -181,6 +186,15 @@
                 <li><a href="https://www.linkedin.com/in/v-segovia/"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 <li><a href="https://www.instagram.com/vsegovia15/"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="mailto:vsegovia1511@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+        </div>
+        <div class="enlaces-legales">
+            <ul>
+                <li><a href="./aviso-legal.html" target="_blank">Aviso Legal</a></li>
+                <li>-</li>
+                <li><a href="./terminos-condiciones.html" target="_blank">Términos y Condiciones</a></li>
+                <li>-</li>
+                <li><a href="./politica-privacidad.html" target="_blank">Política de Privacidad</a></li>
             </ul>
         </div>
         <div class="copyright">
