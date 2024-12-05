@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Lilita+One&display=swap');
 
 @font-face {
     font-family: "Aptos";
@@ -6,12 +6,12 @@
 }
 
 :root {
-    --color-primario: #DCC6E0; /* Lavanda pastel */
-    --color-secundario: #F8D7E1; /* Rosa empolvado */
-    --color-acento: #D4EBE8; /* Menta suave */
-    --color-texto: #4B4B4B; /* Gris oscuro */
-    --color-fondo: #F8F8F8; /* Blanco humo */
-    --color-hover: #B39CD0; /* Morado más intenso para hover */
+    --color-primario: #DCC6E0;
+    --color-secundario: #F8D7E1;
+    --color-acento: #D4EBE8;
+    --color-texto: #4B4B4B;
+    --color-fondo: #F8F8F8;
+    --color-hover: #B39CD0;
 }
 
 /* General */
@@ -26,18 +26,18 @@
 header {
     background-color: var(--color-primario);
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 4rem;
     margin: 0;
     color: white;
 }
 
 /* Nav */
 nav {
-    background-color: var(--color-secundario);
+    background-color: var(--color-primario);
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -75,7 +75,7 @@ main {
     background-color: var(--color-fondo);
 }
 
-section {
+section:not(#contacto) {
     padding: 20px 0;
 }
 
@@ -87,17 +87,86 @@ hr {
     background-color: var(--color-primario);
 }
 
+/* Skills */
+.row {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.col2 {
+    width: 45%;
+    padding: 10px;
+}
+
+.col3 {
+    width: 30%;
+    padding: 10px;
+}
+
+.col4 {
+    width: 25%;
+    padding: 10px;
+}
+
+.cuadrado {
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: 0.5s ease;
+}
+
+.cuadrado:hover {
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.9);
+    transform: scale(1.2);
+    transform: translateY(-10px);
+}
+
+.cuadrado i {
+    color: var(--color-texto);
+    font-size: 5vw;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    transition: transform .5s ease;
+}
+
+.cuadrado i:hover {
+    color: var(--color-texto);
+    transform: scale(1.2);
+}
+
+.cuadrado p {
+    font-size: 1vw;
+    color: var(--color-texto);
+    font-weight: bold;
+}
+
+/* Backgrounds */
+.lavanda {background-color: #E6E6FA}
+.rosa {background-color: #FFD1DC}
+.menta {background-color: #B4F8C8}
+.celeste {background-color: #AEE4FF}
+.melocoton {background-color: #FFDAB9}
+.lavanda2 {background-color: #E1B7D1}
+.vainilla {background-color: #FFF4B2}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lilita One', sans-serif;
     color: var(--color-texto);
     margin-bottom: 15px;
     text-align: center;
 }
 
-h1 {font-size: 2rem}
+h1 {font-size: 4rem}
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -110,7 +179,6 @@ h6 {font-size: 1rem}
 /* Paragraphs */
 p {
     font-size: 1rem;
-    margin-bottom: 20px;
     color: var(--color-texto);
 }
 
@@ -178,6 +246,86 @@ main i:hover {
     transform: scale(1.2);
 }
 
+/* Contacto */
+#contacto {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--color-texto);
+}
+
+.contact-item i {
+    margin-right: 10px;
+}
+
+/* Formulario de Contacto */
+form {
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: .5s ease;
+}
+
+input:hover, textarea:hover {
+    outline: none;
+    border: 1px solid #007BFF;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #007BFF;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.enviar {background-color: #007BFF;transition: .5s ease}
+.borrar {background-color: #dd4848;transition: .5s ease}
+.enviar:hover {background-color: #0056b3}
+.borrar:hover {background-color: #a53030}
+
+
+label {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.mapa {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
 /* Footer */
 footer {
     background-color: var(--color-primario);
@@ -209,5 +357,5 @@ footer i:hover {
 }
 
 .copyright {
-    padding: 20px;
+    padding-top: 20px;
 }

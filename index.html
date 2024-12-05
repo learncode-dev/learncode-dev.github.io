@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>LearnCode</title>
 </head>
 <body>
     <header>
-        <h1>Learncode</h1>
+        <h1>Vanessa Segovia</h1>
     </header>
     <nav>
         <ul>
@@ -23,19 +24,68 @@
     <main>
         <section id="inicio">
             <h2>Sobre mi</h2>
-            <p>Desde pequeña, siempre he sentido una gran atracción por la informática, especialmente por la programación y la ciberseguridad. Esta pasión me llevó a formarme en <strong>Sistemas Microinformáticos y Redes</strong> y posteriormente en <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong>, donde descubrí mi gusto por el diseño y la gestión de proyectos tecnológicos.</p>
-            <p>Actualmente, estoy cursando un grado superior en <strong>Desarrollo de Aplicaciones Web (DAW)</strong>, lo que me permite combinar mi experiencia técnica con nuevas habilidades en programación y diseño web. También he trabajado en el <strong>CSIRT-CV</strong> como operadora de ciberseguridad, adquiriendo experiencia en la gestión de incidentes y sistemas.</p>
-            <p>Me considero una persona curiosa, metódica y siempre abierta a aprender. Mi objetivo es contribuir a proyectos que unan tecnología, creatividad y seguridad, ofreciendo soluciones innovadoras y efectivas.</p>
+            <div class="row">
+                <div class="col2">
+                    <!-- Imagen aqui-->
+                </div>
+                <div class="col2">
+                    <p>Desde pequeña, siempre he sentido una gran atracción por la informática, especialmente por la programación y la ciberseguridad. Esta pasión me llevó a formarme en <strong>Sistemas Microinformáticos y Redes</strong> y posteriormente en <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong>, donde descubrí mi gusto por el diseño y la gestión de proyectos tecnológicos.</p>
+                    <br>
+                    <p>Actualmente, estoy cursando un grado superior en <strong>Desarrollo de Aplicaciones Web (DAW)</strong>, lo que me permite combinar mi experiencia técnica con nuevas habilidades en programación y diseño web. También he trabajado en el <strong>CSIRT-CV</strong> como operadora de ciberseguridad, adquiriendo experiencia en la gestión de incidentes y sistemas.</p>
+                    <br>
+                    <p>Me considero una persona curiosa, metódica y siempre abierta a aprender. Mi objetivo es contribuir a proyectos que unan tecnología, creatividad y seguridad, ofreciendo soluciones innovadoras y efectivas.</p>
+                </div>
+            </div>
         </section>
         <br><br><hr><br><br>
         <section id="skills">
             <h2>Skills</h2>
-            <div class="skills-container">
-                <a href="#" class="skill-btn lavanda">HTML</a>
-                <a href="#" class="skill-btn rosa">CSS</a>
-                <a href="#" class="skill-btn menta">JavaScript</a>
-                <a href="#" class="skill-btn celeste">Python</a>
-                <a href="#" class="skill-btn melocoton">MySQL</a>
+            <div class="row">
+                <div class="col4">
+                    <div class="cuadrado lavanda">
+                        <i class="fa-brands fa-html5"></i><br>
+                        <p>HTML</p>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="cuadrado rosa">
+                        <i class="fa-brands fa-css3-alt"></i><br>
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="cuadrado menta">
+                        <i class="fa-brands fa-js"></i><br>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="col4">
+                    <div class="cuadrado celeste">
+                        <i class="fa-solid fa-database"></i><br>
+                        <p>Bases de Datos</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col3">
+                    <div class="cuadrado melocoton">
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i><br>
+                        <p>Responsive</p>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="cuadrado lavanda2">
+                        <i class="fa-solid fa-mobile-screen-button"></i><br>
+                        <p>Media Queries</p>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="cuadrado vainilla">
+                        <i class="fa-solid fa-table-columns"></i><br>
+                        <p>Grid</p>
+                    </div>
+                </div>
             </div>
 
             
@@ -43,30 +93,101 @@
         <br><br><hr><br><br>
         <section id="proyectos">
             <h2>Proyectos</h2>
-            
-
-        </section>
+            <div class="carousel-container">
+               <div class="carousel-slide active">
+                   <a href="https://www.lovemusicvalencia.com/" target="_blank"><img src="img/lovemusicvalencia.jpg" alt="LoveMusicValencia"></a>
+               </div>
+               <div class="carousel-slide">
+                    <a href="https://learncode-dev.github.io/yolitiamc/" target="_blank"><img src="img/yolitiamc.jpg" alt="Yolitia MC"></a>
+               </div>
+               <div class="carousel-slide">
+                    <a href="https://learncode-dev.github.io/techfest/" target="_blank"><img src="img/techfest.jpg" alt="Techfest"></a>
+               </div>
+               <div class="carousel-slide">
+                    <a href="https://learncode-dev.github.io/portfolio-web-1/" target="_blank"><img src="img/portfolioweb1.jpg" alt="Portfolio Web 1"></a>
+               </div>
+               <a class="prev" onclick="changeSlide(-1)">❮</a>
+               <a class="next" onclick="changeSlide(1)">❯</a>
+               <div class="dot-container">
+                   <span class="dot" onclick="currentSlide(1)"></span>
+                   <span class="dot" onclick="currentSlide(2)"></span>
+                   <span class="dot" onclick="currentSlide(3)"></span>
+                   <span class="dot" onclick="currentSlide(4)"></span>
+               </div>
+            </div>
+       </section>
         <br><br><hr><br><br>
         <section id="contacto">
             <h2>Contacto</h2>
+            <div class="row">
+                <div class="col2">
+                    <form action="/enviar.php" method="post">
+                        <label for="nombre">Nombre y Apellidos:</label>
+                        <br>
+                        <input type="text" id="nombre" name="nombre">
+                        <br>
+                        <label for="email">Correo:</label>
+                        <br>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <label for="mensaje">Mensaje:</label>
+                        <br>
+                        <textarea id="mensaje" name="mensaje"></textarea>
+                        <br>
+                        <!-- <input type="checkbox" id="accept" name="accept" required>
+                        <label for="accept">Acepto los términos y condiciones</label>
+                        <br> -->
+                        <button type="submit" class="enviar">Enviar</button>
+                        <button type="reset" class="borrar">Borrar</button>
+                    </form>
+                </div>
+                <div class="col2">
+                    <div class="contact-icons">
+                        <div class="contact-item">
+                            <a href="https://maps.app.goo.gl/Lo15bJLmRhV81CVv8" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+                            <p>Valencia, España</p>
+                        </div>
+                        <div class="contact-item">
+                            <a href="mailto:info@learncode.es"><i class="fa-solid fa-envelope"></i></a>
+                            <p>info@learncode.es</p>
+                        </div>
+                        <div class="contact-item">
+                            <a href="mailto:vsegovia1511@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <p>vsegovia1511@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://learncode-dev.github.io/"><i class="fa-brands fa-github"></i></a>
+                            <p>learncode-dev.github.io</p>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://www.linkedin.com/in/v-segovia/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <p>Vanessa Segovia</p>
+                        </div>
+                        <div class="contact-item">
+                            <a href="https://www.instagram.com/vsegovia15/"><i class="fa-brands fa-instagram"></i></a>
+                            <p>vsegovia15</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d98647.15916348575!2d-0.44408358214700205!3d39.40775606507612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f4cf0efb06f%3A0xb4a351011f7f1d39!2sValencia!5e0!3m2!1ses!2ses!4v1733406537199!5m2!1ses!2ses"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
         <div class="social-icons">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:info@learncode.es"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href="https://learncode-dev.github.io/"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/v-segovia/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/vsegovia15/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="mailto:vsegovia1511@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
             </ul>
         </div>
         <div class="copyright">
-            <pre>&copy; 2024 - LearnCode | Todos los derechos reservados.</pre>
+            <pre>&copy; <span id="year"></span> - Vanessa Segovia | Todos los derechos reservados.</pre>
         </div>
-
-
-
     </footer>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>
