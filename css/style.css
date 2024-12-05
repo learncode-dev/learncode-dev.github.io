@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: "Aptos";
+    src: url(../fonts/Aptos.ttf);
+}
+
+:root {
+    --color-primario: #DCC6E0; /* Lavanda pastel */
+    --color-secundario: #F8D7E1; /* Rosa empolvado */
+    --color-acento: #D4EBE8; /* Menta suave */
+    --color-texto: #4B4B4B; /* Gris oscuro */
+    --color-fondo: #F8F8F8; /* Blanco humo */
+    --color-hover: #B39CD0; /* Morado más intenso para hover */
+}
+
+/* General */
+* {
+    font-family: "Aptos", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--color-primario);
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: white;
+}
+
+/* Nav */
+nav {
+    background-color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-hover);
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+nav li {
+    display: inline;
+    padding: 20px;
+}
+
+/* Main */
+main {
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+section {
+    padding: 20px 0;
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    border: none;
+    height: 2px;
+    background-color: var(--color-primario);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-texto);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h1 {font-size: 2rem}
+
+h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {font-size: 1.5rem}
+h4 {font-size: 1.3rem}
+h5 {font-size: 1.1rem}
+h6 {font-size: 1rem}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: var(--color-texto);
+}
+
+/* Buttons */
+button, .btn {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--color-acento);
+    transform: scale(1.05);
+}
+
+/* Links */
+main a {
+    color: var(--color-secundario);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+main a:hover {
+    color: var(--color-hover);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: var(--color-fondo);
+    border: 1px solid var(--color-primario);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--color-primario);
+}
+
+table th {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+table td {
+    color: var(--color-texto);
+}
+
+/* Icons */
+main i {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+main i:hover {
+    color: var(--color-hover);
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-primario);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer i {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+footer i:hover {
+    color: var(--color-hover);
+    transform: scale(1.2);
+}
+
+.social-icons ul {
+    list-style-type: none;
+    margin: 20px 0;
+}
+
+.social-icons li {
+    display: inline;
+    padding: 20px;
+}
+
+.copyright {
+    padding: 20px;
+}
