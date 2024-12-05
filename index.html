@@ -1,72 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>LearnCode</title>
 </head>
 <body>
+
     <header>
-        <h1>Learncode</h1>
+        <h1>LearnCode</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
-            <li><a href="#skills"><i class="fa-solid fa-star"></i> Skills</a></li>
-            <li><a href="#proyectos"><i class="fa-solid fa-tv"></i> Proyectos</a></li>
-            <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
-        </ul>
-    </nav>
+
     <main>
-        <section id="inicio">
-            <h2>Sobre mi</h2>
-            <p>Desde pequeña, siempre he sentido una gran atracción por la informática, especialmente por la programación y la ciberseguridad. Esta pasión me llevó a formarme en <strong>Sistemas Microinformáticos y Redes</strong> y posteriormente en <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong>, donde descubrí mi gusto por el diseño y la gestión de proyectos tecnológicos.</p>
-            <p>Actualmente, estoy cursando un grado superior en <strong>Desarrollo de Aplicaciones Web (DAW)</strong>, lo que me permite combinar mi experiencia técnica con nuevas habilidades en programación y diseño web. También he trabajado en el <strong>CSIRT-CV</strong> como operadora de ciberseguridad, adquiriendo experiencia en la gestión de incidentes y sistemas.</p>
-            <p>Me considero una persona curiosa, metódica y siempre abierta a aprender. Mi objetivo es contribuir a proyectos que unan tecnología, creatividad y seguridad, ofreciendo soluciones innovadoras y efectivas.</p>
-        </section>
-        <br><br><hr><br><br>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <a href="#" class="skill-btn lavanda">HTML</a>
-                <a href="#" class="skill-btn rosa">CSS</a>
-                <a href="#" class="skill-btn menta">JavaScript</a>
-                <a href="#" class="skill-btn celeste">Python</a>
-                <a href="#" class="skill-btn melocoton">MySQL</a>
+        <div class="course-container">
+              <div class="course-box" id="html-course">
+                <a href="assets/html/index.html">
+                <h2>HTML</h2>
+                <p>Accede al contenido completo de HTML</p>
+                    <img src="img/html-icon.png" alt="HTML" class="icon">
+                </a>
+              </div>
+
+              <div class="course-box" id="css-course">
+                <a href="assets/css/index.html">
+                <h2>CSS</h2>
+                <p>Accede al contenido completo de CSS</p>
+                    <img src="img/css-icon.png" alt="CSS" class="icon">
+                </a>
+              </div>
+
+            <!-- Curso de JavaScript (no operativo) -->
+              <div class="course-box" id="js-course">
+                <a href="assets/javascript/index.html">
+                <h2>JavaScript</h2>
+                <p>Accede al contenido completo de JavaScript</p>
+                    <img src="img/js-icon.png" alt="JavaScript" class="icon">
+                </a>
+              </div>
+
+            <!-- Curso de SQL (no operativo) -->
+              <div class="course-box" id="sql-course">
+                <a href="assets/sql/index.html">
+                <h2>SQL</h2>
+                <p>Accede al contenido completo de SQL</p>
+                    <img src="img/sql-icon.png" alt="SQL" class="icon">
+                </a>
             </div>
 
-            
-        </section>
-        <br><br><hr><br><br>
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-            
+            <!-- Curso de PHP (no operativo) -->
+              <div class="course-box" id="php-course">
+                <a href="assets/php/index.html">
+                <h2>PHP</h2>
+                <p>Accede al contenido completo de PHP</p>
+                    <img src="img/php-icon.png" alt="PHP" class="icon">
+                </a>
+            </div>
 
-        </section>
-        <br><br><hr><br><br>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            
-        </section>
+            <!-- Curso de Python (no operativo) -->
+              <div class="course-box" id="python-course">
+                <a href="assets/python/index.html">
+                <h2>Python</h2>
+                <p>Accede al contenido completo de Python</p>
+                    <img src="img/python-icon.png" alt="Python" class="icon">
+                </a>
+            </div>
+
+            <!-- Curso de Node.js (no operativo) -->
+              <div class="course-box" id="nodejs-course">
+                <a href="assets/nodejs/index.html">
+                <h2>Node.js</h2>
+                <p>Accede al contenido completo de Node.js</p>
+                    <img src="img/nodejs-icon.png" alt="Node.js" class="icon">
+                </a>
+              </div>
+
+            <!-- Curso de React (no operativo) -->
+              <div class="course-box" id="react-course">
+                <a href="assets/react/index.html">
+                <h2>React</h2>
+                <p>Accede al contenido completo de React</p>
+                    <img src="img/react-icon.png" alt="React" class="icon">
+                </a>
+            </div>
+
+            <!-- Curso de Angular (no operativo) -->
+            <div class="course-box" id="angular-course">
+              <a href="assets/angular/index.html">
+                <h2>Angular</h2>
+                <p>Accede al contenido completo de Angular</p>
+                    <img src="img/angular-icon.png" alt="Angular" class="icon">
+              </a>
+            </div>
+        </div>
     </main>
+
     <footer>
-        <div class="social-icons">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="mailto:info@learncode.es"><i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <pre>&copy; 2024 - LearnCode | Todos los derechos reservados.</pre>
-        </div>
+      <div class="footer-content">
+          <div class="footer-links">
+              <a href="assets/html/index.html">HTML</a>
+              <a href="assets/css/index.html">CSS</a>
+              <a href="assets/javascript/index.html">JavaScript</a>
+              <a href="assets/sql/index.html">SQL</a>
+              <a href="assets/php/index.html">PHP</a>
+              <a href="assets/python/index.html">Python</a>
+              <a href="assets/nodejs/index.html">Node.js</a>
+              <a href="assets/react/index.html">React</a>
+              <a href="assets/angular/index.html">Angular</a>
+          </div>
 
+          <br>
+  
+          <div class="social-media">
+              <a href="https://www.facebook.com" class="social-icon" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com" class="social-icon" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.instagram.com" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+      <br><br>
+      <pre>&copy; 2024 - LearnCode. Todos los derechos reservados.</pre>
+  </footer>
 
-
-    </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
