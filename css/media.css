@@ -84,4 +84,8 @@
         display: block;
         padding: 2px;
     }
+
+    footer p {
+        font-size: 2rem;
+    }
 }
