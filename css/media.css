@@ -84,4 +84,8 @@
         display: block;
         padding: 2px;
     }
+
+    pre {
+        font-size: 2vw;
+    }
 }

@@ -397,3 +397,7 @@ footer a:hover {
 .copyright {
     padding-top: 20px;
 }
+
+pre {
+    font-size: 1vw;
+}
