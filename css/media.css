@@ -1,0 +1,87 @@
+@media screen and (max-width: 768px) {
+    nav a {
+        font-size: 1.5rem;
+    }
+    
+    nav li {
+        display: block;
+        padding: 15px;
+    }
+
+    section:not(#contacto) {
+        padding: 10px 0;
+    }
+
+    .row {
+        display: block;
+        padding: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col2 {
+        width: 100%;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    .col4 {
+        width: 100%;
+    }
+
+    #inicio img {
+        display: absolute;
+        transform: translateX(15%);
+        max-width: 75%;
+    }
+
+    .cuadrado {
+        padding: 10px;
+    }
+
+    .cuadrado i {
+        font-size: 20vw;
+    }
+
+    .cuadrado p {
+        font-size: 5vw;
+    }
+
+    h1 {font-size: 7rem}
+    h2 {font-size: 4rem}
+    h3 {font-size: 3rem}
+    h4 {font-size: 2.6rem}
+    h5 {font-size: 2.2rem}
+    h6 {font-size: 2rem}
+
+    p {
+        font-size: 1.8rem;
+    }
+
+    main i {
+        font-size: 3rem;
+    }
+
+    input:not(input[type=checkbox]), textarea {
+        font-size: 1.8rem;
+    }
+
+    button {
+        font-size: 1.8rem;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+    }
+
+    footer li:not(.social-icons li) {
+        display: block;
+        padding: 2px;
+    }
+}
